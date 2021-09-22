@@ -1,0 +1,15 @@
+https://practice.geeksforgeeks.org/problems/gp-term/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution
+{
+    
+    public double termOfGP(int A,int B,int N)
+{
+
+double r=(double)B/(double)A;
+return A*Math.pow(r,N-1);
+
+}
+
+}
