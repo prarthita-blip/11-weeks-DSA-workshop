@@ -1,0 +1,21 @@
+https://practice.geeksforgeeks.org/problems/modular-multiplicative-inverse-1587115620/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution
+{
+    
+  public int modInverse(int a, int m)
+    {
+      //Your code here
+      int n=0;
+      while (n<m)
+      {
+          if ((n*a)%m==1)
+          return n;
+          n++;
+      }
+      
+      return -1;
+    }
+
+}
