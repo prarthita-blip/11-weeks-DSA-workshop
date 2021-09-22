@@ -1,0 +1,32 @@
+https://practice.geeksforgeeks.org/problems/exactly-3-divisors/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution
+{
+    
+public boolean isPrime(int n)
+    {
+for(int i = 2; i <= Math.sqrt(n); i++){
+if(n % i == 0)
+{
+return false;
+}
+}
+return true;
+}
+//User function Template for C++
+
+public int exactly3Divisors(int N)
+{
+    int count = 0;
+
+for(int i = 2; i <=Math.sqrt(N); i++ ){
+
+if(isPrime(i) && (i * i) <= N){
+count++;
+}
+}
+return count;
+}
+
+}
