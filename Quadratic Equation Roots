@@ -1,0 +1,21 @@
+https://practice.geeksforgeeks.org/problems/quadratic-equation-roots/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution {
+    public ArrayList<Integer> quadraticRoots(int a, int b, int c) {
+        // code here
+        ArrayList<Integer> arr=new ArrayList<Integer>();
+        if ((b*b)<(4*a*c))
+        {
+            arr.add(-1);
+            return arr;
+        }
+        
+        arr.add((int)((-b+Math.sqrt(b*b-4*a*c))/(2*a)));
+        arr.add((int)((-b-Math.sqrt(b*b-4*a*c))/(2*a)));
+        
+        Collections.sort(arr);
+        
+        return arr;
+    }
+}
