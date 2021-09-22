@@ -1,0 +1,19 @@
+https://practice.geeksforgeeks.org/problems/primality-test/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution {
+    public boolean isPrime(int N) {
+      // code here
+      boolean x=true;
+    for ( int i=2;i<=Math.sqrt(N);i++)
+    {
+        if (N%i==0)
+        {
+            x=false;
+            break;
+        }
+    }
+    
+    return x;
+    }
+}
