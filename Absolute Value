@@ -1,0 +1,9 @@
+https://practice.geeksforgeeks.org/problems/absolute-value/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution {
+    public int absolute(int I) {
+        // code here
+        return (I>0)?I:(-1*I);
+    }
+}
