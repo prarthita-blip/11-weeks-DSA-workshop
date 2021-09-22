@@ -1,0 +1,24 @@
+https://practice.geeksforgeeks.org/problems/digits-in-factorial/1/?track=dsa-workshop-1-mathematics&batchId=308
+
+
+class Solution{
+public static double M_E = 2.71828182845904523536;
+public static double M_PI = 3.141592654;
+
+public int digitsInFactorial(int N){
+
+if(N<0)
+
+return 0; //because it would be
+
+if(N==0 || N==1) //fact of 0 or1 is always 1
+
+return 1;
+
+double d=0;
+//using kamenetsky formula
+d=(N * Math.log10(N / M_E) + Math.log10(2 * M_PI * N) /2.0);
+return (int)Math.floor(d) + 1;
+
+}
+}
